@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Саша & Ира | Легенды СПбГУ</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #faf7f2;
+    color: #29251f;
+    font-family: 'Manrope', sans-serif;
+}
+
+header {
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 22px;
+    color: #8c654d;
+}
+
+nav a {
+    text-decoration: none;
+    color: #5d5148;
+    margin-left: 25px;
+    font-size: 13px;
+}
+
+.hero {
+    min-height: 570px;
+    padding: 100px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(135deg, #eee1d3, #faf7f2, #e9d5c5);
+}
+
+.tag {
+    color: #9a7056;
+    letter-spacing: 3px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(55px, 9vw, 100px);
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+h1 span {
+    color: #a77c60;
+    font-style: italic;
+}
+
+.hero p {
+    max-width: 530px;
+    line-height: 1.8;
+    color: #71645a;
+    font-size: 16px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 35px;
+    background: #8c654d;
+    color: white;
+    padding: 16px 30px;
+    border-radius: 40px;
+    text-decoration: none;
+    width: fit-content;
+    font-size: 13px;
+    transition: .3s;
+}
+
+.button:hover {
+    background: #5d4030;
+    transform: translateY(-3px);
+}
+
+section {
+    padding: 90px 10%;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    color: #897b70;
+    margin-bottom: 45px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    border: 1px solid #eee5dc;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px #9b806022;
+}
+
+.card .emoji {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #81766d;
+    line-height: 1.8;
+}
+
+.facts {
+    background: #302a26;
+    color: white;
+    text-align: center;
+}
+
+.facts h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+
+.fact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 35px;
+}
+
+.fact strong {
+    display: block;
+    font-size: 38px;
+    color: #dfb99c;
+    margin-bottom: 10px;
+}
+
+.fact span {
+    font-size: 13px;
+    color: #d0c2b7;
+}
+
+.quote {
+    text-align: center;
+    background: #f0e5da;
+}
+
+.quote p {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(25px, 4vw, 40px);
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+footer {
+    padding: 35px;
+    text-align: center;
+    font-size: 12px;
+    color: #8d7d70;
+}
+
+@media(max-width:600px) {
+    nav { display: none; }
+    section { padding: 65px 7%; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">S & I.</div>
+    <nav>
+        <a href="#about">О нас</a>
+        <a href="#power">Наши качества</a>
+        <a href="#facts">Факты</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <div class="tag">SAINT PETERSBURG UNIVERSITY · 2026</div>
+    <h1>Саша <span>&</span><br>Ира.</h1>
+    <p>
+        Две подруги. Один университет. Бесконечный запас амбиций,
+        харизмы и невероятной энергии.
+        Добро пожаловать в мир двух будущих легенд бизнес-информатики.
+    </p>
+    <a href="#about" class="button">Узнать о легендах ↓</a>
+</div>
+
+<section id="about">
+    <h2 class="section-title">Кто мы такие?</h2>
+    <p class="subtitle">Немного больше, чем просто студентки.</p>
+
+    <div class="cards">
+        <div class="card">
+            <div class="emoji">💅</div>
+            <h3>Саша</h3>
+            <p>
+                Девушка с характером, интеллектом и амбициями.
+                Может разобраться в сложной математике,
+                построить бизнес-стратегию и при этом выглядеть великолепно.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">✨</div>
+            <h3>Ира</h3>
+            <p>
+                Харизма, уверенность и интеллект в одном человеке.
+                Не просто студентка, а потенциальная
+                руководительница компании мирового масштаба.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="facts" id="power">
+    <h2>В чём наша сила?</h2>
+    <div class="fact-grid">
+        <div class="fact">
+            <strong>100%</strong>
+            <span>Харизма</span>
+        </div>
+        <div class="fact">
+            <strong>∞</strong>
+            <span>Амбиции</span>
+        </div>
+        <div class="fact">
+            <strong>2/2</strong>
+            <span>Будущие бизнес-леди</span>
+        </div>
+        <div class="fact">
+            <strong>24/7</strong>
+            <span>На стиле</span>
+        </div>
+    </div>
+</section>
+
+<section id="facts">
+    <h2 class="section-title">Наша академическая жизнь</h2>
+    <p class="subtitle">СПбГУ ещё не знает, с кем связался.</p>
+
+    <div class="cards">
+        <div class="card">
+            <div class="emoji">📚</div>
+            <h3>СПбГУ</h3>
+            <p>Учимся в одном из самых престижных университетов страны.</p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">💻</div>
+            <h3>Бизнес-информатика</h3>
+            <p>Будущие специалисты на пересечении технологий, бизнеса и управления.</p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">👑</div>
+            <h3>Будущее</h3>
+            <p>Большие проекты, успешная карьера и жизнь, о которой мечтают другие.</p>
+        </div>
+    </div>
+</section>
+
+<section class="quote">
+    <p>
+        «Одни просто поступили в СПбГУ.
+        Другие пришли туда, чтобы стать легендами».
+    </p>
+</section>
+
+<footer>
+    © 2026 S & I. Все права на крутость защищены.
+    <br><br>
+    Made with love, ambition & a little bit of chaos ♡
+</footer>
+
+</body>
+</html>
